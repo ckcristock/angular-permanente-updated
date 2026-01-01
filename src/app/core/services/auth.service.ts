@@ -10,7 +10,7 @@ interface LoginResponse {
   providedIn: 'root',
 })
 export class AuthService {
-  private readonly API_URL = 'http://localhost:3000'; // ajusta luego
+  private readonly API_URL = 'http://localhost:8000/api'; // ajusta luego
   private readonly TOKEN_KEY = 'access_token';
 
   constructor(private http: HttpClient) {}
