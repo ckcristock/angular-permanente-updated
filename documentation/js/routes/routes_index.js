@@ -1,0 +1,1 @@
+var ROUTES_INDEX = {"name":"<root>","kind":"module","children":[{"name":"login","kind":"route-path","filename":"src/app/app.routes.ts"},{"name":"**","kind":"route-path","filename":"src/app/app.routes.ts"},{"name":"login","kind":"route-redirect","filename":"src/app/app.routes.ts"}]}
