@@ -1,7 +1,7 @@
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { Observables } from './observables/observables';
 
-const routes: Routes = [
-  {  },
+export const routes: Routes = [
+  { path: 'observables', component: Observables },
+  { path: '', redirectTo: 'observables', pathMatch: 'full' },
 ];
-
-export const AngularRoutes = RouterModule.forChild(routes);

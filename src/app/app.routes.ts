@@ -10,16 +10,19 @@ export const routes: Routes = [
     path: '',
     canActivate: [authGuard],
     loadComponent: () => import('./pages/layout/layout.component').then((m) => m.LayoutComponent),
-    //   children: [
-    //     {
-    //       path: 'dashboard',
-    //       loadComponent: () =>
-    //         import('./pages/dashboard/dashboard.component').then((m) => m.DashboardComponent),
-    //     },
-    //   ],
-  },
-  {
-    path: '**',
-    redirectTo: 'login',
+    children: [
+      {
+        path: 'css',
+        loadChildren: () => import('./pages/css-lessons/css-lessons.routing').then((m) => m.routes),
+      },
+      {
+        path: 'js-ts',
+        loadChildren: () => import('./pages/js-and-ts/jsandts.routing').then((m) => m.routes),
+      },
+      {
+        path: 'angular',
+        loadChildren: () => import('./pages/angular/angular.routing').then((m) => m.routes),
+      },
+    ],
   },
 ];
