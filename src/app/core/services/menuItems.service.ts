@@ -18,6 +18,8 @@ export class MenuItemsService {
       route: '/css', // Ruta padre que coincide con app.routes.ts
       children: [
         { label: 'Flexbox', route: '/css/flexbox' },
+        { label: 'Css', route: '/css/css' },
+        { label: 'Scss', route: '/css/scss' },
         { label: 'Grid CSS', route: '/css/grid' },
         { label: 'Positions', route: '/css/positions' },
         { label: 'Animations', route: '/css/animations' },

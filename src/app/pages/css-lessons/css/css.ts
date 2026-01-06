@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @Component({
   selector: 'app-css',
-  imports: [],
+  imports: [MatTabsModule],
   templateUrl: './css.html',
   styleUrl: './css.scss',
 })
-export class Css {
-
-}
+export class Css {}
