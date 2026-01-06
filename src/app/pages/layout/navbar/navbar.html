@@ -1,1 +1,17 @@
-<p>navbar works!</p>
+<nav class="navbar">
+    <ul class="nav-list">
+        <li *ngFor="let item of menuItems" class="nav-item has-dropdown">
+            <a [routerLink]="item.route" routerLinkActive="active" class="nav-link">
+                {{ item.label }}
+            </a>
+
+            <ul class="dropdown" *ngIf="item.children">
+                <li *ngFor="let child of item.children">
+                    <a [routerLink]="child.route" routerLinkActive="active-child">
+                        {{ child.label }}
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
