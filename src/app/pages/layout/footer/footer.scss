@@ -1,0 +1,20 @@
+.footer {
+    // Dimensiones y posición
+    height: 40px; // Altura fija que definimos en el Layout
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; // Centra el texto como en la Navbar
+
+    // Estética Material
+    background-color: var(--mat-sys-surface-container);
+    color: var(--mat-sys-on-surface-variant);
+    border-top: 1px solid var(--mat-sys-outline-variant);
+
+    p {
+        margin: 0;
+        font: var(--mat-sys-label-small); // Tipografía pequeña y discreta
+        letter-spacing: 0.5px;
+        opacity: 0.7;
+    }
+}

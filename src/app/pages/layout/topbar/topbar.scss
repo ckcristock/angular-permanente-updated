@@ -1,0 +1,43 @@
+.topbar {
+    // Estructura: ocupa todo el ancho y tiene altura fija
+    display: flex;
+    justify-content: space-between; // Empuja el logo a la izquierda y el usuario a la derecha
+    align-items: center;
+    padding: 0 24px;
+    height: 64px; // Coincide con el espacio que reservamos en el Layout
+
+    // Estilos visuales de Material
+    background-color: var(--mat-sys-surface);
+    color: var(--mat-sys-on-surface);
+    border-bottom: 1px solid var(--mat-sys-outline-variant);
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: 700; // Estilo "bold" para resaltar "Frontend"
+        letter-spacing: -0.5px;
+    }
+
+    .user-info {
+        display: flex;
+        align-items: center;
+        gap: 12px; // Espacio entre el nombre y el círculo del avatar
+
+        span {
+            font: var(--mat-sys-label-large);
+            font-weight: 500;
+        }
+
+        .user-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%; // Crea el círculo que dibujaste
+            background-color: var(--mat-sys-primary-container);
+            border: 1px solid var(--mat-sys-outline);
+
+            // Opcional: Centrar iniciales si no hay foto
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

@@ -1,13 +1,18 @@
-<nav class="navbar">
-    <ng-container *ngFor="let item of menuItems">
-        <button mat-button [matMenuTriggerFor]="subMenu" [routerLink]="item.route" routerLinkActive="active-link">
-            {{ item.label }}
-        </button>
-
-        <mat-menu #subMenu="matMenu">
-            <button mat-menu-item *ngFor="let child of item.children" [routerLink]="child.route">
-                {{ child.label }}
+<nav class="classic-navbar">
+    <div class="nav-container">
+        <ng-container *ngFor="let item of menuItems">
+            <button mat-button [matMenuTriggerFor]="subMenu" [routerLink]="item.route" routerLinkActive="active-item"
+                class="nav-button">
+                {{ item.label }}
+                <mat-icon iconPositionEnd>arrow_drop_down</mat-icon>
             </button>
-        </mat-menu>
-    </ng-container>
+
+            <mat-menu #subMenu="matMenu" xPosition="after" class="custom-menu">
+                <button mat-menu-item *ngFor="let child of item.children" [routerLink]="child.route"
+                    routerLinkActive="active-subitem">
+                    <span>{{ child.label }}</span>
+                </button>
+            </mat-menu>
+        </ng-container>
+    </div>
 </nav>

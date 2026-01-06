@@ -8,7 +8,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    canActivate: [authGuard],
+    // canActivate: [authGuard],
     loadComponent: () => import('./pages/layout/layout.component').then((m) => m.Layout),
     children: [
       { path: '', redirectTo: 'css', pathMatch: 'full' },

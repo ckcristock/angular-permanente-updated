@@ -1,0 +1,47 @@
+.classic-navbar {
+    height: 48px;
+    background-color: var(--mat-sys-surface);
+    border-bottom: 1px solid var(--mat-sys-outline-variant);
+    display: flex;
+    align-items: center;
+    width: 100%; // Asegura que ocupe todo el ancho para poder centrar
+
+    .nav-container {
+        display: flex;
+        justify-content: center; // Centra los menús horizontalmente
+        align-items: center;
+        width: 100%;
+        gap: 40px; // Añade una separación clara entre cada categoría (CSS, JS, Angular)
+        height: 100%;
+    }
+
+    .nav-button {
+        height: 100%;
+        border-radius: 0;
+        padding: 0 16px;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.8px;
+        text-transform: uppercase; // Le da un toque más "clásico" y limpio
+        color: var(--mat-sys-on-surface-variant);
+
+        // Indicador inferior cuando está seleccionado
+        &.active-item {
+            color: var(--mat-sys-primary) !important;
+            border-bottom: 3px solid var(--mat-sys-primary); // La línea azul que ya tienes
+        }
+
+        &:hover {
+            background-color: rgba(var(--mat-sys-primary-rgb), 0.04);
+        }
+    }
+}
+
+// Estilo del icono de flecha
+mat-icon {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+    vertical-align: middle;
+}
