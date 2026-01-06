@@ -1,17 +1,13 @@
 <nav class="navbar">
-    <ul class="nav-list">
-        <li *ngFor="let item of menuItems" class="nav-item has-dropdown">
-            <a [routerLink]="item.route" routerLinkActive="active" class="nav-link">
-                {{ item.label }}
-            </a>
+    <ng-container *ngFor="let item of menuItems">
+        <button mat-button [matMenuTriggerFor]="subMenu" [routerLink]="item.route" routerLinkActive="active-link">
+            {{ item.label }}
+        </button>
 
-            <ul class="dropdown" *ngIf="item.children">
-                <li *ngFor="let child of item.children">
-                    <a [routerLink]="child.route" routerLinkActive="active-child">
-                        {{ child.label }}
-                    </a>
-                </li>
-            </ul>
-        </li>
-    </ul>
+        <mat-menu #subMenu="matMenu">
+            <button mat-menu-item *ngFor="let child of item.children" [routerLink]="child.route">
+                {{ child.label }}
+            </button>
+        </mat-menu>
+    </ng-container>
 </nav>

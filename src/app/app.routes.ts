@@ -9,8 +9,9 @@ export const routes: Routes = [
   {
     path: '',
     canActivate: [authGuard],
-    loadComponent: () => import('./pages/layout/layout.component').then((m) => m.LayoutComponent),
+    loadComponent: () => import('./pages/layout/layout.component').then((m) => m.Layout),
     children: [
+      { path: '', redirectTo: 'css', pathMatch: 'full' },
       {
         path: 'css',
         loadChildren: () => import('./pages/css-lessons/css-lessons.routing').then((m) => m.routes),
