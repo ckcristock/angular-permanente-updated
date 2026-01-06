@@ -1,0 +1,23 @@
+.mat-tab-group {
+    margin-bottom: 48px;
+}
+
+p {
+    // Tipografía profesional basada en tu tema de Material
+    font-family: var(--mat-sys-body-large-font);
+    font-size: 1.1rem;
+    line-height: 1.6; // Mejora la lectura de explicaciones largas
+    color: var(--mat-sys-on-surface);
+
+    // Espaciado para que no se pegue a otros elementos
+    margin-bottom: 1.5rem;
+    max-width: 800px; // Evita líneas demasiado largas difíciles de leer
+
+    // Estilo específico para títulos de ejercicios como en tu imagen
+    &.exercise-title {
+        font-weight: 500;
+        text-transform: lowercase; // Para mantener el estilo "flexbox exercises"
+        color: var(--mat-sys-on-surface-variant);
+        margin-top: 0;
+    }
+}
