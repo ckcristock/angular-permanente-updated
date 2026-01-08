@@ -55,6 +55,10 @@ main {
   margin-bottom: 48px;
 }
 
+.mat-mdc-tab-body-content {
+  padding-top: 40px;
+}
+
 p {
   // Tipografía profesional basada en tu tema de Material
   font-family: var(--mat-sys-body-large-font);
