@@ -23,6 +23,7 @@ export class MenuItemsService {
         { label: 'Grid CSS', route: '/css/grid' },
         { label: 'Positions', route: '/css/positions' },
         { label: 'Animations', route: '/css/animations' },
+        { label: 'Modal', route: '/css/modal' },
       ],
     },
     {

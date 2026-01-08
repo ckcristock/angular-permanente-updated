@@ -6,6 +6,7 @@ import { Positions } from './positions/positions';
 import { Animations } from './animations/animations';
 import { Css } from './css/css';
 import { ScssLessons } from './scss-lessons/scss-lessons';
+import { Modal } from './modal/modal';
 
 export const routes: Routes = [
   { path: 'flexbox', component: Flexbox },
@@ -14,5 +15,6 @@ export const routes: Routes = [
   { path: 'grid', component: GridCss },
   { path: 'positions', component: Positions },
   { path: 'animations', component: Animations },
+  { path: 'modal', component: Modal },
   { path: '', redirectTo: 'flexbox', pathMatch: 'full' },
 ];
