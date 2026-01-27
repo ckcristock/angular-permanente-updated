@@ -39,7 +39,10 @@ export class MenuItemsService {
       label: 'Angular',
       icon: 'layers',
       route: '/angular', // Ruta padre que coincide con app.routes.ts
-      children: [{ label: 'Observables', route: '/angular/observables' }],
+      children: [
+        { label: 'Observables', route: '/angular/observables' },
+        { label: 'Sweet Alert', route: '/angular/sweet-alert' },
+      ],
     },
   ];
 
