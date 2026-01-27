@@ -42,6 +42,7 @@ export class MenuItemsService {
       children: [
         { label: 'Observables', route: '/angular/observables' },
         { label: 'Sweet Alert', route: '/angular/sweet-alert' },
+        { label: 'Interfaces', route: '/angular/interfaces' },
       ],
     },
   ];
