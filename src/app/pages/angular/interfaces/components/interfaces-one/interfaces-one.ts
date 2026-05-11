@@ -1,12 +1,4 @@
 import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-interfaces-one',
-  imports: [],
-  templateUrl: './interfaces-one.html',
-  styleUrl: './interfaces-one.scss',
-})
-
 type statusMachine = 'IDLE' | 'RUNNING' | 'PAUSED' | 'STOPPED' | 'ERROR' | 'EMERGENCY';
 
 interface cuttingMachineStatus {
@@ -16,8 +8,12 @@ interface cuttingMachineStatus {
   bladePosition: number;
   status: 'start' | 'stop' | 'idle' | 'error';
 }
-
+@Component({
+  selector: 'app-interfaces-one',
+  imports: [],
+  templateUrl: './interfaces-one.html',
+  styleUrl: './interfaces-one.scss',
+})
 export class InterfacesOne {
-  
   constructor() {}
 }
