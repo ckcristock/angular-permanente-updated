@@ -1,0 +1,15 @@
+<p>Angular routes excersice</p>
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+  <mat-tab label="First">
+    <div class="flex-container">
+      <button [routerLink]="">IR</button>
+      <button (click)="navigateTo()">Navegar con queryParams</button>
+      <button [routerLink]="'/angular/routes/11'">IR</button>
+    </div>
+    <div>
+      <p>params: {{ paramMap }}</p>
+    </div>
+  </mat-tab>
+  <mat-tab label="Second">Content 2</mat-tab>
+  <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>

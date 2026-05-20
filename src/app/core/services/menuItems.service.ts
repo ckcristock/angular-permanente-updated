@@ -44,6 +44,7 @@ export class MenuItemsService {
         { label: 'Sweet Alert', route: '/angular/sweet-alert' },
         { label: 'Interfaces', route: '/angular/interfaces' },
         { label: 'Pipes', route: '/angular/pipes' },
+        { label: 'Routes', route: '/angular/routes' },
       ],
     },
   ];
